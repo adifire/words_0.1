@@ -1,0 +1,23 @@
+<html>
+	<head>
+		<title>Test page of words</title>
+		
+	</head>
+	<body>
+		
+		<form method="post" action="/words">
+			<p><input type="text" name="word_name" placeholder="Enter Word Name" /></p>
+			<p><input type="text" name="definition" placeholder="Define it" /></p>
+			<input type="submit" />
+		</form>
+		
+		<h2>Words</h2>
+		<ul style="list-style: none;">
+			{% for w in words %}
+			<li><h3>{{w.word_name}}</h4><span class="">{{w.definition}}</span></li>
+			
+			{% endfor %}
+		</ul>
+		
+	</body>
+</html>
