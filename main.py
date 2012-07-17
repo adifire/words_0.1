@@ -132,7 +132,7 @@ class TestHandler(webapp.RequestHandler):
 		l = []
 		for word in words:
 			l.append(word.toDict())
-		return self.response.out.write(template.render("test_1.html",{'words':l}))
+		return self.response.out.write(template.render("test2.html",{'words':l}))
 
 def main():
     application = webapp.WSGIApplication([
