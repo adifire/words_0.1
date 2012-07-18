@@ -2,34 +2,128 @@
 <html lang="en">
 	<head>
 		<title>Words</title>
-		<link rel="stylesheet" href="css/words.css">
+		
+		<!-- Le styles -->
+		<link href="css/bootstrap.css" rel="stylesheet">
+	    <style type="text/css">
+	      body {
+	        padding-top: 60px;
+	        padding-bottom: 40px;
+	      } 
+	      .span3 {
+	      	width: 200px;
+	      	float: left;
+	      	margin-left: 30px;
+	      	height: 150px;
+	      }
+	      
+	      footer {
+	      	position: fixed;
+	      	bottom: 0;
+	      	margin-left: 20px;
+	      	margin-bottom: 10px;
+	      }
+	      
+	      
+	    </style>
+		<link href="css/bootstrap-responsive.css" rel="stylesheet">
+		
+	    <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
+	    <!--[if lt IE 9]>
+	      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+	    <![endif]-->
+		
 		<script data-main="js/main" src="js/libs/require/require.js"></script>
 	</head>
+	
 	<body>
-		
-	<div id="wordapp">
-		
-		<div class="title">
-			<h1>Words</h1>
-		</div>
-		
-		<div class="content">
-			
-			<div id="create-word">
-				<input type="text" id="new-word-name" placeholder="Type in a word name" />
-				<input type="text" id="new-word-def" placeholder="Define it...." />
-				<button id="add-word">Add word</button>
+	
+		<div class="navbar navbar-fixed-top">
+		  <div class="navbar-inner">
+		    <div class="container">
+		      <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+		        <span class="icon-bar"></span>
+		        <span class="icon-bar"></span>
+		        <span class="icon-bar"></span>
+		      </a>
+		      <a class="brand" href="#">A Word To Remember</a>
+		      <div class="btn-group pull-right">
+	              <a class="btn " data-toggle="modal" href="#newWordModal">
+	                <i class="icon-plus"></i> Add A Word
+	                
+	              </a>
+	              
+            	</div>
+		    </div>
+		  </div>
+		</div>	
+		<div id="wordapp" class="container">
+			<div class="span10 well">
+			  <h1>Welcome to Words!</h1>
+			  <p>This all about learning and discovering new words! Make yourself at home! <a href="#" rel="tooltip" title="first tooltip">hover over me</a></p>
+			  <p><a class="btn btn-primary btn-large">Learn more &raquo;</a></p>
 			</div>
-			
-			<div id="words">
-			  <ul id="words-list"></ul>
+			<div class="row">
+				<div class="content span9">
+					<div class="row">
+						<div class="span12">
+						
+						<div id="words-list" class="row">
+						</div>
+						
+						</div>
+					</div>
+					<div class="modal hide fade" id="newWordModal">
+					  <div class="modal-header">
+					    <button type="button" class="close" data-dismiss="modal">×</button>
+					    <h3>Add A Word</h3>
+					  </div>
+					  <div class="modal-body">
+					    <div id="create-word">
+					     	<input type="text" id="new-word-name" placeholder="Type in a word name" />
+					     	<input type="text" id="new-word-def" placeholder="Define it...." />
+					    </div>
+					  </div>
+					  <div class="modal-footer">
+					    <a href="#" class="btn" data-dismiss="modal">Close</a>
+					    <a href="#" class="btn btn-primary" data-dismiss="modal" id="add-word">Add Word!</a>
+					  </div>
+					</div>
+				</div>
 			</div>
-			
-			
 		</div>
+		<footer>apps@adifire</footer>
 		
-	</div>
-	<div id="footer"></div>
+		
 		
 	</body>
 </html>
+<!--<div id="words">
+  <ul id="words-list"></ul>
+</div>
+</div>-->
+<!--<div class="word">
+  <div class="display">
+    <div class="word-content"><%- word_name %></div>
+    <div class="word-content"><%- definition %></div>
+    <span class="word-destroy"></span>
+  </div>
+</div>-->
+<!--	<div id="create-word">
+		<input type="text" id="new-word-name" placeholder="Type in a word name" />
+		<input type="text" id="new-word-def" placeholder="Define it...." />
+		<button id="add-word">Add word</button>
+	</div>
+	-->
+	<!--	      <div class="nav-collapse">
+		        <ul class="nav">
+		          <li class="active"><a href="#">Home</a></li>
+		          <li><a href="#about">About</a></li>
+		          <li><a href="#contact">Contact</a></li>
+		        </ul>
+		      </div><!--/.nav-collapse -->
+	<!--<div class="span3 well">
+	<h2>Add A New Word!</h2>
+	 	
+	 	<a class="btn btn-primary btn-large" >Add Word!</a></p>
+	</div>-->

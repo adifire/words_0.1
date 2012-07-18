@@ -7,11 +7,13 @@ require.config({
     jquery: 'libs/jquery/jquery-min',
     underscore: 'libs/underscore/underscore',
     backbone: 'libs/backbone/backbone',
+    bootstrap : 'libs/bootstrap/bootstrap',
     text: 'libs/require/text'
   }
 
 });
 
-require(['views/app'], function(AppView){
+require(['jquery','views/app','bootstrap'], function($, AppView){
+$("[rel=tooltip]").tooltip();
   var app_view = new AppView();
 });

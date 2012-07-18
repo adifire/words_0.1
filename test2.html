@@ -94,7 +94,7 @@
       <div class="row">
         <div class="span4">
           <h2>Heading</h2>
-           <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
+           <p><a href="#" rel="tooltip" title="first tooltip">hover over me</a> id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
           <p><a class="btn" href="#">View details &raquo;</a></p>
         </div>
         <div class="span4">
@@ -121,18 +121,9 @@
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
     <script src="js/libs/jquery/jquery-min.js"></script>
-    <script src="js/libs/bootstrap/bootstrap-transition.js"></script>
-    <script src="js/libs/bootstrap/bootstrap-alert.js"></script>
-    <script src="js/libs/bootstrap/bootstrap-modal.js"></script>
-    <script src="js/libs/bootstrap/bootstrap-dropdown.js"></script>
-    <script src="js/libs/bootstrap/bootstrap-scrollspy.js"></script>
-    <script src="js/libs/bootstrap/bootstrap-tab.js"></script>
-    <script src="js/libs/bootstrap/bootstrap-tooltip.js"></script>
-    <script src="js/libs/bootstrap/bootstrap-popover.js"></script>
-    <script src="js/libs/bootstrap/bootstrap-button.js"></script>
-    <script src="js/libs/bootstrap/bootstrap-collapse.js"></script>
-    <script src="js/libs/bootstrap/bootstrap-carousel.js"></script>
-    <script src="js/libs/bootstrap/bootstrap-typeahead.js"></script>
-
+    <script src="js/libs/bootstrap/bootstrap.js"></script>
+	<script type="text/javascript">
+	    $("[rel=tooltip]").tooltip();
+	</script>
   </body>
 </html>

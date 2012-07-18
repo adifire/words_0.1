@@ -8,7 +8,9 @@ define([
   var WordView = Backbone.View.extend({
   	model : Word,
   	
-  	tagName : 'li',
+  	tagName : 'div',
+  	
+  	className : 'span3 well',
   	
   	template : _.template(wordsTemplate),
   	

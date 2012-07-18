@@ -31,6 +31,7 @@ define([
   		},
   		
   		createWord : function (e) {
+  			alert("yes");
   			try{
   			this.collection.create({
   				'word_name' : this.$('#new-word-name').val(),
