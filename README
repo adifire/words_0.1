@@ -1,0 +1,3 @@
+A simple Words app that lets you push and update words in the app
+
+For Google App Engine, Backbone.js client, modularized using Require.js, designed with the help of Twitter Bootstrap.
