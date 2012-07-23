@@ -24,6 +24,7 @@ define([
   		addOne: function (word) {
   			var view = new WordView({ model : word });
   			this.$("#words-list").append(view.render().el);
+  			$("[rel=tooltip]").tooltip();
   		},
   		
   		addAll: function () {
@@ -31,7 +32,6 @@ define([
   		},
   		
   		createWord : function (e) {
-  			alert("yes");
   			try{
   			this.collection.create({
   				'word_name' : this.$('#new-word-name').val(),
@@ -39,6 +39,7 @@ define([
   			});
   			this.$('#new-word-name').val('');
   			this.$('#new-word-def').val('');
+  			this.reset();
   			}catch (e) {
   				alert(e.message);
   			}
